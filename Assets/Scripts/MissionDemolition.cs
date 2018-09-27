@@ -57,6 +57,7 @@ public class MissionDemolition : MonoBehaviour
         castle.transform.position = castlePos;
         shotsTaken = 0;
 
+        // reset camera
         SwitchView("Show Both");
         ProjectileLine.S.Clear();
 
@@ -103,8 +104,8 @@ public class MissionDemolition : MonoBehaviour
         {
             eView = uitButton.text;
         }
-
         showing = eView;
+
         switch(showing)
         {
             case "Show Slingshot":
